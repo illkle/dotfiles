@@ -1,0 +1,125 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "console_title_template": " {{ .Folder }} :: {{if .Root}}Admin{{end}}",
+    "palette": {
+        "background": "#000000",
+        "foreground": "#bfbdb6",
+        "selection-background": "#1b3a5b",
+        "selection-foreground": "#bfbdb6",
+        "cursor-color": "#1CAAD8",
+        "cursor-text": "#1CAAD8",
+        "black": "#616161",
+        "bright-black": "#8e8e8e",
+        "red": "#ff8272",
+        "bright-red": "#ffc4bd",
+        "green": "#b4fa72",
+        "bright-green": "#d5fcb8",
+        "yellow": "#fefdc2",
+        "bright-yellow": "#fefdd5",
+        "blue": "#a5d5fe",
+        "bright-blue": "#c1e3fe",
+        "magenta": "#ff8ffd",
+        "bright-magenta": "#ffb1ff",
+        "cyan": "#d0d1fe",
+        "bright-cyan": "#e5e6fe",
+        "white": "#f1f1f1",
+        "bright-white": "#feffff"
+    },
+    "blocks": [
+        {
+            "_comment": "Separator before",
+            "alignment": "right",
+            "overflow": "hide",
+            "filler": "{{ if .Overflow }} {{ else }}<#101010>\ueacc</>{{ end }}",
+            "foreground": "red",
+            "type": "prompt",
+            "force": true
+        },
+        {
+            "_comment": "Main left",
+            "alignment": "left",
+            "segments": [
+                {
+                    "type": "path",
+                    "style": "plain",
+                    "foreground": "magenta",
+                    "properties": {
+                        "style": "folder"
+                    },
+                    "template": "<b>{{ .Path }}</b> "
+                },
+                {
+                    "type": "git",
+                    "style": "plain",
+                    "foreground": "lightGreen",
+                    "template": "<green>git:(</>{{ .HEAD}}<green>)</> \uf176{{ .Ahead }} \uf175{{ .Behind }}",
+                    "properties": {
+                        "fetch_status": true,
+                        "branch_icon": ""
+                    }
+                },
+                {
+                    "type": "status",
+                    "style": "plain",
+                    "foreground": "red",
+                    "template": " \uf00d"
+                }
+            ],
+            "type": "prompt",
+            "newline": true
+        },
+        {
+            "_comment": "Main right",
+            "alignment": "right",
+            "overflow": "hide",
+            "segments": [
+                {
+                    "type": "node",
+                    "style": "plain",
+                    "foreground": "lightGreen",
+                    "template": "\ue718 {{ .Full }} "
+                },
+                {
+                    "type": "php",
+                    "style": "plain",
+                    "foreground": "blue",
+                    "template": "\ue73d {{ .Full }} "
+                },
+                {
+                    "type": "python",
+                    "style": "plain",
+                    "foreground": "blue",
+                    "template": "\uE235 {{ .Full }}"
+                },
+                {
+                    "type": "julia",
+                    "style": "plain",
+                    "foreground": "magenta",
+                    "template": "\uE624 {{ .Full }}"
+                },
+                {
+                    "type": "ruby",
+                    "style": "plain",
+                    "foreground": "red",
+                    "template": "\uE791 {{ .Full}}"
+                },
+                {
+                    "type": "go",
+                    "style": "plain",
+                    "foreground": "blue",
+                    "template": "\uFCD1 {{ .Full}}"
+                }
+            ],
+            "type": "prompt"
+        },
+        {
+            "_comment": "Newline for input",
+            "alignment": "left",
+            "type": "prompt",
+            "newline": true,
+            "force": true
+        }
+    ],
+    "version": 3,
+    "terminal_background": "background"
+}

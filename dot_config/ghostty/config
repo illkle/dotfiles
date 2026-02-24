@@ -1,0 +1,51 @@
+auto-update-channel = tip
+
+# Pleasant window size
+window-height = 30
+window-width = 110
+window-padding-x = 16
+window-padding-y = 16
+window-colorspace = "display-p3"
+
+# MacOs Styling
+macos-titlebar-style = transparent
+window-show-tab-bar = always
+
+# Font configuration
+font-size = 13
+font-thicken = false
+font-family = Hack
+# A bit more space between lines
+adjust-cell-height = 3
+
+# Colors
+background = #000000
+foreground = #FFFFFF
+selection-background = #1b3a5b
+selection-foreground = #bfbdb6
+cursor-color          = #1CAAD8
+cursor-text          = #1CAAD8
+# black
+palette = 0=#616161
+palette = 8=#8e8e8e
+# red
+palette = 1=#ff8272
+palette = 9=#ffc4bd
+# green
+palette = 2=#b4fa72
+palette = 10=#d5fcb8
+# yellow
+palette = 3=#fefdc2
+palette = 11=#fefdd5
+# blue
+palette = 4=#a5d5fe
+palette = 12=#c1e3fe
+# magenta
+palette = 5=#ff8ffd
+palette = 13=#ffb1ff
+# cyan
+palette = 6=#d0d1fe
+palette = 14=#e5e6fe
+# white
+palette = 7=#f1f1f1
+palette = 15=#feffff
