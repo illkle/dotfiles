@@ -16,7 +16,7 @@ font-size = 13
 font-thicken = false
 font-family = Hack
 # A bit more space between lines
-adjust-cell-height = 3
+adjust-cell-height = 10
 
 # Colors
 background = #000000

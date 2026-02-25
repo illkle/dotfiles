@@ -1,9 +1,8 @@
-# Autosuggestions (grey inline suggestions)
+# Autosuggestions
 zsh-users/zsh-autosuggestions
 
-# Syntax highlighting (pick ONE of these)
-zdharma-continuum/fast-syntax-highlighting
-# zsh-users/zsh-syntax-highlighting
+# Syntax highlighting 
+zsh-users/zsh-syntax-highlighting
 
-# History substring search (Up/Down matches what you've typed)
-zsh-users/zsh-history-substring-search
+# History substring search 
+#zsh-users/zsh-history-substring-search
