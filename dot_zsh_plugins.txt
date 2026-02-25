@@ -3,6 +3,3 @@ zsh-users/zsh-autosuggestions
 
 # Syntax highlighting 
 zsh-users/zsh-syntax-highlighting
-
-# History substring search 
-#zsh-users/zsh-history-substring-search
