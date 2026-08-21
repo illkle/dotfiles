@@ -1,8 +1,8 @@
 # Autosuggestions
-zsh-users/zsh-autosuggestions
+#zsh-users/zsh-autosuggestions
 
 # Syntax highlighting 
-zsh-users/zsh-syntax-highlighting
+#zsh-users/zsh-syntax-highlighting
 
 # Tab with fzf 
-Aloxaf/fzf-tab
+#Aloxaf/fzf-tab

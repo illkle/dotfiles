@@ -7,25 +7,3 @@ done
 if [[ -f "$HOME/.zshrc.local" ]]; then
   source "$HOME/.zshrc.local"
 fi
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/zekel/.cache/lm-studio/bin"
-# End of LM Studio CLI section
-
-
-# pnpm
-export PNPM_HOME="/Users/zekel/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME/bin:"*) ;;
-  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
-esac
-# pnpm end
-
-# fnm
-FNM_PATH="/opt/homebrew/opt/fnm/bin"
-if [ -d "$FNM_PATH" ]; then
-  eval "$(fnm env --shell zsh)"
-fi
-
-# bun completions
-[ -s "/Users/zekel/.bun/_bun" ] && source "/Users/zekel/.bun/_bun"
